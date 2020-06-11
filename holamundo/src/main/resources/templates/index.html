@@ -5,7 +5,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>HOLA MUNDO DESDE HTML</h1>
+<h1>HOLA MUNDO JAVA</h1>
 <p th:text="${saludo}"> </p>
+<table>
+<thead>
+<th> Nombre</th>
+<th> Apellido</th>
+<th> Email</th>
+<th> Telefono</th>
+</thead>
+<tbody>
+<tr th:each="persona : ${personas}">
+
+<td th:text="${persona.Nombre}"></span>
+<td th:text="${persona.Apellido}"></span>
+<td th:text="${persona.Email}"></span>
+<td th:text="${persona.Telefono}"></span>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
